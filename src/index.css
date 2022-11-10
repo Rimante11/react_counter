@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --darkgrey: #263142;
+  --lightwhite: #ebeeef;
+  --myorange: #c97d14;
+  --lightgrey: #9a9ea8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans',sans-serif; */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  margin-top: 40px;
+}
+
+.counterContainer {
+  background-color: var(--darkgrey);
+  width: 50vh;
+  height: 60vh;
+  border-radius: 15px;
+  border: 1px solid var(--lightgrey);
+  box-shadow: 10px 8px 21px -7px var(--myorange);
+
+}
+
+.title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 28px;
+  color: var(--lightgrey);
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px 30px 0px;
+}
+
+.numberValue {
+  font-family: 'Open sans', sans-serif;
+  color: var(--lightwhite);
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-family: 'Open sans', sans-serif;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--lightgrey);
+  color: var(--myorange);
+  background-color: var(--darkgrey);
+  box-shadow: 3px 3px 3px -1px black;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+hr {
+  width: 90%;
+  margin-top: 30px;
+  opacity: 70%;
+}
+
+.descriptionText {
+  font-size: 18px;
+  color: var(--lightgrey);
+  font-family: 'Open sans', sans-serif;
+  margin-top: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: justify;
+
 }
